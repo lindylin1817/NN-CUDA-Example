@@ -64,6 +64,7 @@ make
 **Compare kernel running time**  
 ```shell
 python3 pytorch/time.py --compiler jit
+//after jit compilation, the cuda ops(add2.so, add2_kernel.cuda.o, add2_ops.o) will be catched under root/.cache/torch_extensions/py38_cu102/add2/
 python3 pytorch/time.py --compiler setup
 python3 pytorch/time.py --compiler cmake
 ```

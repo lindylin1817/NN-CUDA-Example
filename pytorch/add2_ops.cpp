@@ -1,6 +1,7 @@
 #include <torch/extension.h>
-#include "add2.h"
+#include "../include/add2.h"
 
+//提供一个PyTorch可以调用的接口
 void torch_launch_add2(torch::Tensor &c,
                        const torch::Tensor &a,
                        const torch::Tensor &b,
