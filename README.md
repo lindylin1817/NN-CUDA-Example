@@ -1,6 +1,9 @@
 # Neural Network CUDA Example
 ![logo](./image/logo.png)
 
+与本开源代码配合的文章：详解PyTorch编译并调用自定义CUDA算子的三种方式
+https://zhuanlan.zhihu.com/p/358778742
+
 Several simple examples for neural network toolkits (PyTorch, TensorFlow, etc.) calling custom CUDA operators.
 
 We provide several ways to compile the CUDA kernels and their cpp wrappers, including jit, setuptools and cmake.
