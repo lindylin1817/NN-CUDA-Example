@@ -50,6 +50,7 @@ Directly run the python code.
 **Setuptools**  
 ```shell
 python3 pytorch/setup.py install
+//Generated and installed at /usr/local/lib/python3.8/dist-packages/add2-0.0.0-py3.8-linux-x86_64.egg
 ```
 
 **CMake**  
@@ -66,6 +67,7 @@ make
 python3 pytorch/time.py --compiler jit
 //after jit compilation, the cuda ops(add2.so, add2_kernel.cuda.o, add2_ops.o) will be catched under root/.cache/torch_extensions/py38_cu102/add2/
 python3 pytorch/time.py --compiler setup
+//directly include /usr/local/lib/python3.8/dist-packages/add2-0.0.0-py3.8-linux-x86_64.egg
 python3 pytorch/time.py --compiler cmake
 ```
 
